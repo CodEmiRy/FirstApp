@@ -1,6 +1,6 @@
 package org.pajacyk;
 
-import org.pajacyk.DateInne.Date;
+import org.pajacyk.dateInne.Date;
 import org.pajacyk.ZadanieDodatkowe.MojTyp;
 
 import static java.lang.Math.PI;
@@ -66,7 +66,7 @@ public class Main {
         System.out.println(b3);
 
         /**
-         * DateInne
+         * dateInne
          * Jak korzystamy z typu o tej samej nazwe to każda kolejna musi mieć import w deklaracji,
          * */
         Date date = new Date();
@@ -112,7 +112,7 @@ public class Main {
         /**
          * Operatory inkrementacji (++) i dekrementacji (−−)
          * zwiekszeniu/zmniejszeniu wartosci o 1
-        */
+         */
         int z = 5;
         int y = z++;
         System.out.println(z);
@@ -140,7 +140,6 @@ public class Main {
          * Tablice
          */
 
-//        int[][][] tab ={new  int[]{1,2},new int[]{3,4}, new int[]{ 5, 6}};
-//       tab[0][0][0];
-    }
+
+}
 }
