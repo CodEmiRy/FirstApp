@@ -1,14 +1,47 @@
 package org.pajacyk.zadanie71;
 
-public class Plane extends Vehicle {
-    @Override
-    public void start() {
-        System.out.print("Plane ");
-        super.start();
+public class Plane extends Vehicle implements Flying {
+
+    public Plane(String name) {
+        super(name);
     }
 
-    public void lot(){
+    @Override
+    public void takeOff() {
+        System.out.println("takeOff z Plane");
+    }
 
-        System.out.println("Odlot XD");
+    @Override
+    public void land() {
+        System.out.println("land z Plane");
+
+    }
+
+    @Override
+    public void callAirControl() {
+        System.out.println("callAirControl z Plane");
+
+    }
+
+    @Override
+    public double getFuelNeeds() {
+        return 10;
+    }
+
+    @Override
+    public double getDistance() {
+        return 20;
+    }
+
+    @Override
+    public void go() {
+        land();
+        super.go();
+    }
+
+    @Override
+    public void stop() {
+        takeOff();
+        super.stop();
     }
 }

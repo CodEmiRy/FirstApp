@@ -11,26 +11,21 @@ public abstract class Vehicle {
 
     public abstract double getDistance();
 
-    public double calculateFuelConsumption(){
+    public double calculateFuelConsumption() {
         return getFuelNeeds() / getDistance();
-    };
+    }
 
-    public void go(){
-        System.out.println("uruchomiony pojazd"+ getClass());
-    };
+    public void go() {
+        System.out.println("uruchomiony pojazd: " + this.getClass().getSimpleName() );
+    }
 
-    public void stop(){
-        System.out.println("zatrzymany pojazd"+ getClass());
-
-    };
+    public void stop() {
+        System.out.println("zatrzymany pojazd: "+ this.getClass().getSimpleName()) ;
+    }
 
     @Override
     public String toString() {
         return "name='" + name;
     }
 
-
-    //    public void start() {
-//        System.out.println("start Vehicle");
-//    }
 }

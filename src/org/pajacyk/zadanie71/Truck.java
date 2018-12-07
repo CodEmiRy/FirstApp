@@ -1,11 +1,14 @@
 package org.pajacyk.zadanie71;
 
-public class Truck extends Vehicle {
+public class Truck extends Car {
 
+
+    public Truck(String name) {
+        super(name);
+    }
 
     @Override
-    public void start() {
-        System.out.print("Truck ");
-        super.start();
+    public double getFuelNeeds() {
+        return super.getFuelNeeds();
     }
 }
