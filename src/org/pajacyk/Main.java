@@ -3,6 +3,10 @@ package org.pajacyk;
 import org.pajacyk.dateInne.Date;
 import org.pajacyk.ZadanieDodatkowe.MojTyp;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import static java.lang.Math.PI;
 //import  java.lang.Math;
 
@@ -139,6 +143,18 @@ public class Main {
         /**
          * Tablice
          */
+        /**
+         *
+         * */
+        String[] fruitTable = { "apple", "pear", "plum" };
+        //List<String> fruitList = Arrays.asList(fruitTable);
+        // to tworzy tylko podgląd w postaci listy do naszej tablciy
+        List<String> fruitList = new ArrayList<>(Arrays.asList(fruitTable));
+        System.out.println(fruitList);
+        fruitList.add("banana");
+        System.out.println(fruitList);
+
+        List<String> future = new ArrayList<>();
 
 
 }
